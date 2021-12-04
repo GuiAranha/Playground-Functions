@@ -38,11 +38,11 @@ function highestCount(numbers) {
   let count = 0;
   let max = Math.max.apply(Math, numbers);
 
-  numbers.forEach((element) => {
-    if (element === max){
+  for (let value of numbers){
+    if (value === max){
       count++;
     }
-  });
+  }
 
   return count;
 
@@ -116,11 +116,9 @@ function decode(text) {
     decodedText = decodedText.replace("4", "o");
     decodedText = decodedText.replace("5", "u");
   }
-  
+
   return decodedText;
 }
-
-
 
 module.exports = {
   calcArea,
