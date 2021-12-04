@@ -76,7 +76,7 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(numbers) {
   let fizzBuzzBug = [];
 
-  numbers.forEach((element) => {
+  for (let value of numbers){
     if (element % 3 == 0 && element % 5 == 0){
       fizzBuzzBug.push("fizzBuzz");
     }else if(element % 3 == 0){
@@ -86,7 +86,7 @@ function fizzBuzz(numbers) {
     }else{
       fizzBuzzBug.push("bug!");
     }
-  });
+  }
 
   return fizzBuzzBug;
 }

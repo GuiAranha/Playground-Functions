@@ -13,16 +13,10 @@ function techList(listTec, name) {
         tech: value,
         name: name
       }
-      
       listObj.push(techObj);
-      
     }
-
     return listObj;
   }
-
-  
-
 }
 
 // Desafio 11
