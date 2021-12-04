@@ -21,8 +21,10 @@ function splitSentence(text) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(names) {
+  let newNames = [names[names.length-1], names[0]];
+  let concatenateNames = newNames.join(", ");
+  return concatenateNames;
 }
 
 // Desafio 5
