@@ -73,8 +73,22 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numbers) {
+  let fizzBuzzBug = [];
+
+  numbers.forEach((element) => {
+    if (element % 3 == 0 && element % 5 == 0){
+      fizzBuzzBug.push("fizzBuzz");
+    }else if(element % 3 == 0){
+      fizzBuzzBug.push("fizz");
+    }else if(element % 5 == 0){
+      fizzBuzzBug.push("buzz");
+    }else{
+      fizzBuzzBug.push("bug!");
+    }
+  });
+
+  return fizzBuzzBug;
 }
 
 // Desafio 9
