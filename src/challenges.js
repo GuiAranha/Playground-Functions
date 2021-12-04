@@ -38,12 +38,6 @@ function highestCount(numbers) {
   let count = 0;
   let max = Math.max.apply(Math, numbers);
 
-  //numbers.forEach((element) => {
-    //if (element > max){
-    //  max = element;
-    // }
-  //});
-
   numbers.forEach((element) => {
     if (element === max){
       count++;
@@ -55,8 +49,27 @@ function highestCount(numbers) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let distanceCat1 = mouse - cat1;
+  let distanceCat2 = mouse - cat2;
+  let result;
+
+  if (distanceCat1 < 0){
+    distanceCat1 = distanceCat1 * (-1);
+  }
+  if (distanceCat2 < 0){
+    distanceCat2 = distanceCat2 * (-1);
+  }
+
+  if (distanceCat1 < distanceCat2){
+    result = "cat1";
+  }else if (distanceCat2 < distanceCat1){
+    result = "cat2";
+  }else{
+    result = "os gatos trombam e o rato foge";
+  }
+
+  return result;
 }
 
 // Desafio 8
